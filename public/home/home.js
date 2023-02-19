@@ -22,11 +22,11 @@ async function getDBJson() {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
-            document.getElementById('test').innerHTML = JSON.stringify(data);
+            data.forEach(element => {
+                const markup = `<li>${JSON.stringify(element)}</li>`;
+                document.querySelector('ul').insertAdjacentHTML('beforeend', markup);
+            });
         })
-        
-       
 }
 
 getDBJson();

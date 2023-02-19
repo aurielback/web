@@ -1,16 +1,16 @@
 {
     "products": [
-        {"250 tibia cions": {
-            "price": "100",
-            "amount": "250"
-        }},
-        {"500 tibia cions": {
-            "price": "300",
-            "amount": "500"
-        }},
-        {"1000 tibia cions": {
-            "price": "500",
-            "amount": "1000"
-        }}
+        {
+            "name": "Grudziel",
+            "age": 25
+        },
+        {
+            "name": "Bonus",
+            "age": 22
+        },
+        {
+            "name": "Rondel",
+            "age": 11
+        }
     ]
 }
