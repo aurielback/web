@@ -15,7 +15,7 @@ async function getDBJson() {
         cache: 'default'
     };
 
-    let myRequest = new Request("http://localhost:3000/students", config)
+    let myRequest = new Request("http://localhost:3000/products", config)
 
     fetch(myRequest)
         .then(function (response) {
