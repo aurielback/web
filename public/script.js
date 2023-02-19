@@ -1,1 +1,1 @@
-console.log('witam');
+console.log('script.js');
