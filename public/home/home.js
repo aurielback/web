@@ -1,3 +1,5 @@
+let formEl = document.querySelector('.form');
+
 async function getTibiaItems() {
     const response = await fetch('/tibiaitem');
     const data = await response.json();
@@ -5,7 +7,7 @@ async function getTibiaItems() {
 }
 
 //db json
-async function getDBJson() {
+async function getProducts() {
     const config = {
         method: 'GET',
         headers: {
@@ -29,5 +31,22 @@ async function getDBJson() {
         })
 }
 
-getDBJson();
+getProducts();
 
+
+formEl.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const formData = new FormData(formEl);
+    const data = new URLSearchParams(formData);
+    
+    fetch("http://localhost:3000/products", {
+        method: 'POST',
+        body: data
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+
+    window.location.reload();
+})

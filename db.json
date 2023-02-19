@@ -1,16 +1,39 @@
 {
-    "products": [
-        {
-            "name": "Grudziel",
-            "age": 25
-        },
-        {
-            "name": "Bonus",
-            "age": 22
-        },
-        {
-            "name": "Rondel",
-            "age": 11
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Grudziel",
+      "age": "25"
+    },
+    {
+      "id": 2,
+      "name": "Bonus",
+      "age": "22"
+    },
+    {
+      "id": 3,
+      "name": "Rondel",
+      "age": "11"
+    },
+    {
+      "name": "2",
+      "age": "2",
+      "id": 4
+    },
+    {
+      "name": "dsada",
+      "age": "dsadas",
+      "id": 5
+    },
+    {
+      "name": "dla",
+      "age": "sd",
+      "id": 6
+    },
+    {
+      "name": "osada",
+      "age": "dsadas",
+      "id": 7
+    }
+  ]
 }
